@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Rediff Suite">
+  <test  name="Create Portfolio Test">
+    <classes>
+      <class name="testcases.CreatePortfolio"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Delete Portfolio Test">
+    <classes>
+      <class name="testcases.DeletePortfolio"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Buy Stock Test">
+    <classes>
+      <class name="testcases.BuyStock"/>
+    </classes>
+  </test>
+  
+</suite> <!-- Suite -->

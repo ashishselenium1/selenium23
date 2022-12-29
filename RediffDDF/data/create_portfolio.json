@@ -1,0 +1,16 @@
+{
+  "test_data": [
+    {
+      "portfolio_name": "Nov2022",
+      "runmode": "Y"
+    },
+    {
+      "portfolio_name": "Nov2023",
+      "runmode": "N"
+    },
+    {
+      "portfolio_name": "Nov2024",
+      "runmode": "N"
+    }
+  ]
+}

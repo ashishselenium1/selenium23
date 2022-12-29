@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 6, Time elapsed: 295.775 s <<< FAILURE! - in TestSuite
+testcases.DeletePortfolio.deletePortfolio  Time elapsed: 266.494 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Element not found portfolio_selection_dropdown_id
+	at testcases.DeletePortfolio.deletePortfolio(DeletePortfolio.java:45)
+

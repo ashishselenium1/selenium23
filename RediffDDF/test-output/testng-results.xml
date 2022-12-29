@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="0" failed="3" skipped="6">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-27T07:43:38 IST" name="Rediff Suite" finished-at="2022-12-27T07:43:39 IST" duration-ms="1221">
+    <groups>
+    </groups>
+    <test started-at="2022-12-27T07:43:38 IST" name="Create Portfolio Test" finished-at="2022-12-27T07:43:39 IST" duration-ms="968">
+      <class name="testcases.CreatePortfolio">
+        <test-method is-config="true" signature="init()[pri:0, instance:testcases.CreatePortfolio@672872e1]" started-at="2022-12-27T07:43:38 IST" name="init" finished-at="2022-12-27T07:43:39 IST" duration-ms="307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="createPortFolio(org.json.simple.JSONObject)[pri:0, instance:testcases.CreatePortfolio@672872e1]" started-at="2022-12-27T07:43:39 IST" name="createPortFolio" data-provider="getData" finished-at="2022-12-27T07:43:39 IST" duration-ms="252" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"runmode":"Y","portfolio_name":"Nov2022"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['com.google.common.util.concurrent.SimpleTimeLimiter com.google.common.util.concurrent.SimpleTimeLimiter.create(java.util.concurrent.ExecutorService)']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'com.google.common.util.concurrent.SimpleTimeLimiter com.google.common.util.concurrent.SimpleTimeLimiter.create(java.util.concurrent.ExecutorService)'
+at org.openqa.selenium.net.UrlChecker.<init>(UrlChecker.java:62)
+at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at keywords.GenericKeywords.openBrowser(GenericKeywords.java:41)
+at testcases.CreatePortfolio.createPortFolio(CreatePortfolio.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPortFolio -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.CreatePortfolio@672872e1]" started-at="2022-12-27T07:43:39 IST" name="quit" finished-at="2022-12-27T07:43:39 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="init()[pri:0, instance:testcases.CreatePortfolio@672872e1]" started-at="2022-12-27T07:43:39 IST" name="init" finished-at="2022-12-27T07:43:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="createPortFolio(org.json.simple.JSONObject)[pri:0, instance:testcases.CreatePortfolio@672872e1]" started-at="2022-12-27T07:43:39 IST" name="createPortFolio" data-provider="getData" finished-at="2022-12-27T07:43:39 IST" duration-ms="4" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"runmode":"N","portfolio_name":"Nov2023"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[skipping the test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: skipping the test
+at keywords.GenericKeywords.skipTest(GenericKeywords.java:167)
+at testcases.CreatePortfolio.createPortFolio(CreatePortfolio.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPortFolio -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.CreatePortfolio@672872e1]" started-at="2022-12-27T07:43:39 IST" name="quit" finished-at="2022-12-27T07:43:39 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="init()[pri:0, instance:testcases.CreatePortfolio@672872e1]" started-at="2022-12-27T07:43:39 IST" name="init" finished-at="2022-12-27T07:43:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="createPortFolio(org.json.simple.JSONObject)[pri:0, instance:testcases.CreatePortfolio@672872e1]" started-at="2022-12-27T07:43:39 IST" name="createPortFolio" data-provider="getData" finished-at="2022-12-27T07:43:39 IST" duration-ms="3" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"runmode":"N","portfolio_name":"Nov2024"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[skipping the test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: skipping the test
+at keywords.GenericKeywords.skipTest(GenericKeywords.java:167)
+at testcases.CreatePortfolio.createPortFolio(CreatePortfolio.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPortFolio -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.CreatePortfolio@672872e1]" started-at="2022-12-27T07:43:39 IST" name="quit" finished-at="2022-12-27T07:43:39 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- testcases.CreatePortfolio -->
+    </test> <!-- Create Portfolio Test -->
+    <test started-at="2022-12-27T07:43:39 IST" name="Delete Portfolio Test" finished-at="2022-12-27T07:43:39 IST" duration-ms="89">
+      <class name="testcases.DeletePortfolio">
+        <test-method is-config="true" signature="init()[pri:0, instance:testcases.DeletePortfolio@6497b078]" started-at="2022-12-27T07:43:39 IST" name="init" finished-at="2022-12-27T07:43:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="deletePortfolio(org.json.simple.JSONObject)[pri:0, instance:testcases.DeletePortfolio@6497b078]" started-at="2022-12-27T07:43:39 IST" name="deletePortfolio" data-provider="getData" finished-at="2022-12-27T07:43:39 IST" duration-ms="10" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"runmode":"Y","portfolio_name":"Nov2022"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['com.google.common.util.concurrent.SimpleTimeLimiter com.google.common.util.concurrent.SimpleTimeLimiter.create(java.util.concurrent.ExecutorService)']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'com.google.common.util.concurrent.SimpleTimeLimiter com.google.common.util.concurrent.SimpleTimeLimiter.create(java.util.concurrent.ExecutorService)'
+at org.openqa.selenium.net.UrlChecker.<init>(UrlChecker.java:62)
+at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at keywords.GenericKeywords.openBrowser(GenericKeywords.java:41)
+at testcases.DeletePortfolio.deletePortfolio(DeletePortfolio.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePortfolio -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.DeletePortfolio@6497b078]" started-at="2022-12-27T07:43:39 IST" name="quit" finished-at="2022-12-27T07:43:39 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="init()[pri:0, instance:testcases.DeletePortfolio@6497b078]" started-at="2022-12-27T07:43:39 IST" name="init" finished-at="2022-12-27T07:43:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="deletePortfolio(org.json.simple.JSONObject)[pri:0, instance:testcases.DeletePortfolio@6497b078]" started-at="2022-12-27T07:43:39 IST" name="deletePortfolio" data-provider="getData" finished-at="2022-12-27T07:43:39 IST" duration-ms="3" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"runmode":"N","portfolio_name":"Nov2023"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[skipping the test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: skipping the test
+at keywords.GenericKeywords.skipTest(GenericKeywords.java:167)
+at testcases.DeletePortfolio.deletePortfolio(DeletePortfolio.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePortfolio -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.DeletePortfolio@6497b078]" started-at="2022-12-27T07:43:39 IST" name="quit" finished-at="2022-12-27T07:43:39 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="init()[pri:0, instance:testcases.DeletePortfolio@6497b078]" started-at="2022-12-27T07:43:39 IST" name="init" finished-at="2022-12-27T07:43:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="deletePortfolio(org.json.simple.JSONObject)[pri:0, instance:testcases.DeletePortfolio@6497b078]" started-at="2022-12-27T07:43:39 IST" name="deletePortfolio" data-provider="getData" finished-at="2022-12-27T07:43:39 IST" duration-ms="3" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"runmode":"N","portfolio_name":"Nov2024"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[skipping the test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: skipping the test
+at keywords.GenericKeywords.skipTest(GenericKeywords.java:167)
+at testcases.DeletePortfolio.deletePortfolio(DeletePortfolio.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePortfolio -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.DeletePortfolio@6497b078]" started-at="2022-12-27T07:43:39 IST" name="quit" finished-at="2022-12-27T07:43:39 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- testcases.DeletePortfolio -->
+    </test> <!-- Delete Portfolio Test -->
+    <test started-at="2022-12-27T07:43:39 IST" name="Buy Stock Test" finished-at="2022-12-27T07:43:39 IST" duration-ms="81">
+      <class name="testcases.BuyStock">
+        <test-method is-config="true" signature="init()[pri:0, instance:testcases.BuyStock@8317c52]" started-at="2022-12-27T07:43:39 IST" name="init" finished-at="2022-12-27T07:43:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="buyStock(org.json.simple.JSONObject)[pri:0, instance:testcases.BuyStock@8317c52]" started-at="2022-12-27T07:43:39 IST" name="buyStock" data-provider="getData" finished-at="2022-12-27T07:43:39 IST" duration-ms="10" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"runmode":"Y","stock_name":"Reliance Power Ltd.","price":"1000","qty":"100","purchase_date":"22-04-2018"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['com.google.common.util.concurrent.SimpleTimeLimiter com.google.common.util.concurrent.SimpleTimeLimiter.create(java.util.concurrent.ExecutorService)']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'com.google.common.util.concurrent.SimpleTimeLimiter com.google.common.util.concurrent.SimpleTimeLimiter.create(java.util.concurrent.ExecutorService)'
+at org.openqa.selenium.net.UrlChecker.<init>(UrlChecker.java:62)
+at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at keywords.GenericKeywords.openBrowser(GenericKeywords.java:41)
+at testcases.BuyStock.buyStock(BuyStock.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyStock -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.BuyStock@8317c52]" started-at="2022-12-27T07:43:39 IST" name="quit" finished-at="2022-12-27T07:43:39 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="init()[pri:0, instance:testcases.BuyStock@8317c52]" started-at="2022-12-27T07:43:39 IST" name="init" finished-at="2022-12-27T07:43:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="buyStock(org.json.simple.JSONObject)[pri:0, instance:testcases.BuyStock@8317c52]" started-at="2022-12-27T07:43:39 IST" name="buyStock" data-provider="getData" finished-at="2022-12-27T07:43:39 IST" duration-ms="2" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"runmode":"N","portfolio_name":"Nov2023"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[skipping the test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: skipping the test
+at keywords.GenericKeywords.skipTest(GenericKeywords.java:167)
+at testcases.BuyStock.buyStock(BuyStock.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyStock -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.BuyStock@8317c52]" started-at="2022-12-27T07:43:39 IST" name="quit" finished-at="2022-12-27T07:43:39 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="init()[pri:0, instance:testcases.BuyStock@8317c52]" started-at="2022-12-27T07:43:39 IST" name="init" finished-at="2022-12-27T07:43:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="buyStock(org.json.simple.JSONObject)[pri:0, instance:testcases.BuyStock@8317c52]" started-at="2022-12-27T07:43:39 IST" name="buyStock" data-provider="getData" finished-at="2022-12-27T07:43:39 IST" duration-ms="2" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"runmode":"N","portfolio_name":"Nov2024"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[skipping the test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: skipping the test
+at keywords.GenericKeywords.skipTest(GenericKeywords.java:167)
+at testcases.BuyStock.buyStock(BuyStock.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyStock -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.BuyStock@8317c52]" started-at="2022-12-27T07:43:39 IST" name="quit" finished-at="2022-12-27T07:43:39 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- testcases.BuyStock -->
+    </test> <!-- Buy Stock Test -->
+  </suite> <!-- Rediff Suite -->
+</testng-results>

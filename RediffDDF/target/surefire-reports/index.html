@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Rediff_Suite">
+              <span class="suite-name border-failed">Rediff Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Rediff_Suite">
+                    <span>C:\Users\Abhishek Puri\workspace\Nov2022\RediffDDF\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Rediff_Suite">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Rediff_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Rediff_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Rediff_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Rediff_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Rediff_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 1 failed,  6 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Rediff_Suite" class="hide-methods failed suite-Rediff_Suite"> (hide)</a> <!-- hide-methods failed suite-Rediff_Suite -->
+                      <a href="#" panel-name="suite-Rediff_Suite" class="show-methods failed suite-Rediff_Suite"> (show)</a> <!-- show-methods failed suite-Rediff_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Rediff_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Rediff_Suite" title="testcases.DeletePortfolio" hash-for-method="deletePortfolio({&quot;runmode&quot;:&quot;Y&quot;,&quot;portfolio_name&quot;:&quot;Nov2022&quot;})">deletePortfolio({"runmode":"Y","portfolio_name":"Nov2022"})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Rediff_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Rediff_Suite" class="hide-methods skipped suite-Rediff_Suite"> (hide)</a> <!-- hide-methods skipped suite-Rediff_Suite -->
+                      <a href="#" panel-name="suite-Rediff_Suite" class="show-methods skipped suite-Rediff_Suite"> (show)</a> <!-- show-methods skipped suite-Rediff_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Rediff_Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Rediff_Suite" title="testcases.BuyStock" hash-for-method="buyStock({&quot;runmode&quot;:&quot;N&quot;,&quot;portfolio_name&quot;:&quot;Nov2024&quot;})">buyStock({"runmode":"N","portfolio_name":"Nov2024"})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Rediff_Suite" title="testcases.BuyStock" hash-for-method="buyStock({&quot;runmode&quot;:&quot;N&quot;,&quot;portfolio_name&quot;:&quot;Nov2023&quot;})">buyStock({"runmode":"N","portfolio_name":"Nov2023"})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Rediff_Suite" title="testcases.CreatePortfolio" hash-for-method="createPortFolio({&quot;runmode&quot;:&quot;N&quot;,&quot;portfolio_name&quot;:&quot;Nov2023&quot;})">createPortFolio({"runmode":"N","portfolio_name":"Nov2023"})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Rediff_Suite" title="testcases.CreatePortfolio" hash-for-method="createPortFolio({&quot;runmode&quot;:&quot;N&quot;,&quot;portfolio_name&quot;:&quot;Nov2024&quot;})">createPortFolio({"runmode":"N","portfolio_name":"Nov2024"})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Rediff_Suite" title="testcases.DeletePortfolio" hash-for-method="deletePortfolio({&quot;runmode&quot;:&quot;N&quot;,&quot;portfolio_name&quot;:&quot;Nov2023&quot;})">deletePortfolio({"runmode":"N","portfolio_name":"Nov2023"})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Rediff_Suite" title="testcases.DeletePortfolio" hash-for-method="deletePortfolio({&quot;runmode&quot;:&quot;N&quot;,&quot;portfolio_name&quot;:&quot;Nov2024&quot;})">deletePortfolio({"runmode":"N","portfolio_name":"Nov2024"})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Rediff_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Rediff_Suite" class="hide-methods passed suite-Rediff_Suite"> (hide)</a> <!-- hide-methods passed suite-Rediff_Suite -->
+                      <a href="#" panel-name="suite-Rediff_Suite" class="show-methods passed suite-Rediff_Suite"> (show)</a> <!-- show-methods passed suite-Rediff_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Rediff_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Rediff_Suite" title="testcases.BuyStock" hash-for-method="buyStock({&quot;runmode&quot;:&quot;Y&quot;,&quot;stock_name&quot;:&quot;Reliance Power Ltd.&quot;,&quot;price&quot;:&quot;1000&quot;,&quot;qty&quot;:&quot;100&quot;,&quot;purchase_date&quot;:&quot;22-04-...)">buyStock({"runmode":"Y","stock_name":"Reliance Power Ltd.","price":"1000","qty":"100","purchase_date":"22-04-...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Rediff_Suite" title="testcases.CreatePortfolio" hash-for-method="createPortFolio({&quot;runmode&quot;:&quot;Y&quot;,&quot;portfolio_name&quot;:&quot;Nov2022&quot;})">createPortFolio({"runmode":"Y","portfolio_name":"Nov2022"})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Rediff_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Rediff_Suite" class="panel Rediff_Suite">
+          <div class="suite-Rediff_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.DeletePortfolio</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletePortfolio({&quot;runmode&quot;:&quot;Y&quot;,&quot;portfolio_name&quot;:&quot;Nov2022&quot;})">
+                  </a> <!-- deletePortfolio({"runmode":"Y","portfolio_name":"Nov2022"}) -->
+                  <span class="method-name">deletePortfolio</span>
+                  <span class="parameters">({"runmode":"Y","portfolio_name":"Nov2022"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Element not found portfolio_selection_dropdown_id
+	at keywords.GenericKeywords.assertAll(GenericKeywords.java:171)
+	at keywords.GenericKeywords.reportFailure(GenericKeywords.java:160)
+	at keywords.GenericKeywords.getElement(GenericKeywords.java:119)
+	at keywords.GenericKeywords.select(GenericKeywords.java:97)
+	at testcases.DeletePortfolio.deletePortfolio(DeletePortfolio.java:45)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Rediff_Suite-class-failed -->
+          <div class="suite-Rediff_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcases.CreatePortfolio</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPortFolio({&quot;runmode&quot;:&quot;N&quot;,&quot;portfolio_name&quot;:&quot;Nov2023&quot;})">
+                  </a> <!-- createPortFolio({"runmode":"N","portfolio_name":"Nov2023"}) -->
+                  <span class="method-name">createPortFolio</span>
+                  <span class="parameters">({"runmode":"N","portfolio_name":"Nov2023"})</span>
+                  <div class="stack-trace">org.testng.SkipException: skipping the test
+	at keywords.GenericKeywords.skipTest(GenericKeywords.java:167)
+	at testcases.CreatePortfolio.createPortFolio(CreatePortfolio.java:57)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPortFolio({&quot;runmode&quot;:&quot;N&quot;,&quot;portfolio_name&quot;:&quot;Nov2024&quot;})">
+                  </a> <!-- createPortFolio({"runmode":"N","portfolio_name":"Nov2024"}) -->
+                  <span class="method-name">createPortFolio</span>
+                  <span class="parameters">({"runmode":"N","portfolio_name":"Nov2024"})</span>
+                  <div class="stack-trace">org.testng.SkipException: skipping the test
+	at keywords.GenericKeywords.skipTest(GenericKeywords.java:167)
+	at testcases.CreatePortfolio.createPortFolio(CreatePortfolio.java:57)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Rediff_Suite-class-skipped -->
+          <div class="suite-Rediff_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcases.BuyStock</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyStock({&quot;runmode&quot;:&quot;N&quot;,&quot;portfolio_name&quot;:&quot;Nov2024&quot;})">
+                  </a> <!-- buyStock({"runmode":"N","portfolio_name":"Nov2024"}) -->
+                  <span class="method-name">buyStock</span>
+                  <span class="parameters">({"runmode":"N","portfolio_name":"Nov2024"})</span>
+                  <div class="stack-trace">org.testng.SkipException: skipping the test
+	at keywords.GenericKeywords.skipTest(GenericKeywords.java:167)
+	at testcases.BuyStock.buyStock(BuyStock.java:52)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyStock({&quot;runmode&quot;:&quot;N&quot;,&quot;portfolio_name&quot;:&quot;Nov2023&quot;})">
+                  </a> <!-- buyStock({"runmode":"N","portfolio_name":"Nov2023"}) -->
+                  <span class="method-name">buyStock</span>
+                  <span class="parameters">({"runmode":"N","portfolio_name":"Nov2023"})</span>
+                  <div class="stack-trace">org.testng.SkipException: skipping the test
+	at keywords.GenericKeywords.skipTest(GenericKeywords.java:167)
+	at testcases.BuyStock.buyStock(BuyStock.java:52)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Rediff_Suite-class-skipped -->
+          <div class="suite-Rediff_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcases.DeletePortfolio</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletePortfolio({&quot;runmode&quot;:&quot;N&quot;,&quot;portfolio_name&quot;:&quot;Nov2023&quot;})">
+                  </a> <!-- deletePortfolio({"runmode":"N","portfolio_name":"Nov2023"}) -->
+                  <span class="method-name">deletePortfolio</span>
+                  <span class="parameters">({"runmode":"N","portfolio_name":"Nov2023"})</span>
+                  <div class="stack-trace">org.testng.SkipException: skipping the test
+	at keywords.GenericKeywords.skipTest(GenericKeywords.java:167)
+	at testcases.DeletePortfolio.deletePortfolio(DeletePortfolio.java:41)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletePortfolio({&quot;runmode&quot;:&quot;N&quot;,&quot;portfolio_name&quot;:&quot;Nov2024&quot;})">
+                  </a> <!-- deletePortfolio({"runmode":"N","portfolio_name":"Nov2024"}) -->
+                  <span class="method-name">deletePortfolio</span>
+                  <span class="parameters">({"runmode":"N","portfolio_name":"Nov2024"})</span>
+                  <div class="stack-trace">org.testng.SkipException: skipping the test
+	at keywords.GenericKeywords.skipTest(GenericKeywords.java:167)
+	at testcases.DeletePortfolio.deletePortfolio(DeletePortfolio.java:41)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Rediff_Suite-class-skipped -->
+          <div class="suite-Rediff_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.CreatePortfolio</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPortFolio({&quot;runmode&quot;:&quot;Y&quot;,&quot;portfolio_name&quot;:&quot;Nov2022&quot;})">
+                  </a> <!-- createPortFolio({"runmode":"Y","portfolio_name":"Nov2022"}) -->
+                  <span class="method-name">createPortFolio</span>
+                  <span class="parameters">({"runmode":"Y","portfolio_name":"Nov2022"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Rediff_Suite-class-passed -->
+          <div class="suite-Rediff_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.BuyStock</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyStock({&quot;runmode&quot;:&quot;Y&quot;,&quot;stock_name&quot;:&quot;Reliance Power Ltd.&quot;,&quot;price&quot;:&quot;1000&quot;,&quot;qty&quot;:&quot;100&quot;,&quot;purchase_date&quot;:&quot;22-04-...)">
+                  </a> <!-- buyStock({"runmode":"Y","stock_name":"Reliance Power Ltd.","price":"1000","qty":"100","purchase_date":"22-04-...) -->
+                  <span class="method-name">buyStock</span>
+                  <span class="parameters">({"runmode":"Y","stock_name":"Reliance Power Ltd.","price":"1000","qty":"100","purchase_date":"22-04-2018"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Rediff_Suite-class-passed -->
+        </div> <!-- panel Rediff_Suite -->
+        <div panel-name="test-xml-Rediff_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Abhishek Puri\workspace\Nov2022\RediffDDF\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Rediff Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Create Portfolio Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.CreatePortfolio&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Create Portfolio Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Delete Portfolio Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.DeletePortfolio&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Delete Portfolio Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Buy Stock Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.BuyStock&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Buy Stock Test --&gt;
+&lt;/suite&gt; &lt;!-- Rediff Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Rediff_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Rediff Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Create Portfolio Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Delete Portfolio Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Buy Stock Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Rediff_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Rediff Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Rediff_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Rediff Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Rediff_Suite');
+function tableData_Rediff_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'deletePortfolio')
+data.setCell(0, 2, 'testcases.DeletePortfolio')
+data.setCell(0, 3, 266445);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'buyStock')
+data.setCell(1, 2, 'testcases.BuyStock')
+data.setCell(1, 3, 14113);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'createPortFolio')
+data.setCell(2, 2, 'testcases.CreatePortfolio')
+data.setCell(2, 3, 9284);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'deletePortfolio')
+data.setCell(3, 2, 'testcases.DeletePortfolio')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'deletePortfolio')
+data.setCell(4, 2, 'testcases.DeletePortfolio')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'buyStock')
+data.setCell(5, 2, 'testcases.BuyStock')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'createPortFolio')
+data.setCell(6, 2, 'testcases.CreatePortfolio')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'createPortFolio')
+data.setCell(7, 2, 'testcases.CreatePortfolio')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'buyStock')
+data.setCell(8, 2, 'testcases.BuyStock')
+data.setCell(8, 3, 0);
+window.suiteTableData['Rediff_Suite']= { tableData: data, tableDiv: 'times-div-Rediff_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-Rediff_Suite">
+              </div> <!-- times-div-Rediff_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Rediff_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Rediff Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Rediff_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Rediff_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.CreatePortfolio</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createPortFolio({"runmode":"Y","portfolio_name":"Nov2022"})</span>
+                <span class="method-start">337 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">9623 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">11060 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createPortFolio({"runmode":"N","portfolio_name":"Nov2023"})</span>
+                <span class="method-start">11082 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">11082 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">11092 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createPortFolio({"runmode":"N","portfolio_name":"Nov2024"})</span>
+                <span class="method-start">11094 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">11095 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.DeletePortfolio</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">11145 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deletePortfolio({"runmode":"Y","portfolio_name":"Nov2022"})</span>
+                <span class="method-start">11145 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">277639 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">279967 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deletePortfolio({"runmode":"N","portfolio_name":"Nov2023"})</span>
+                <span class="method-start">279968 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">279969 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">279977 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deletePortfolio({"runmode":"N","portfolio_name":"Nov2024"})</span>
+                <span class="method-start">279978 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">279979 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.BuyStock</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">280013 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">buyStock({"runmode":"Y","stock_name":"Reliance Power Ltd.","price":"1000","qty":"100","purchase_date":"22-04-...)</span>
+                <span class="method-start">280014 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">294128 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">294949 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">buyStock({"runmode":"N","portfolio_name":"Nov2023"})</span>
+                <span class="method-start">294950 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">294951 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">294960 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">buyStock({"runmode":"N","portfolio_name":"Nov2024"})</span>
+                <span class="method-start">294961 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">294962 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
