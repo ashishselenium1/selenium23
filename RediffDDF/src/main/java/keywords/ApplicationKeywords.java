@@ -12,6 +12,7 @@ import com.aventstack.extentreports.ExtentTest;
 public class ApplicationKeywords extends ValidationKeywords{
 	
 	public ApplicationKeywords(ExtentTest test) {
+		System.out.println("Running");
 		// init the prop object
 		String path = System.getProperty("user.dir")+"\\src\\test\\resources\\project.properties";
 		prop = new Properties();
