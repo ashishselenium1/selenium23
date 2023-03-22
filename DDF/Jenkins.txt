@@ -1,0 +1,67 @@
+Running a simple Jenkins Project
+How to run our project manually
+How to periodically run
+
+
+--- Move project to GIT----
+Run project from GIT manually
+Run project from GIT periodically
+Run project with hook
+=============================================GIT===============================================
+Download git and install
+Create account on git-https://github.com
+Open cmd prompt and type "Git"-
+Local Rep on Machine
+Project > Staging Env >  Local Git Rep > GitHub account
+git init - Initialize local Rep -  will create .git in Users
+git status - shows shifted project to local git
+Register username with GIt- git config --global user.name "ashishselenium1"
+Register email with Git- git config --global user.email "appiumselendroid@gmail.com"
+You will get popup with user id and password
+git add . -> Adds all folders to staging
+git add <FolderName> -> Adds specific folder to staging
+git commit -m "first commit" -> Commit to local git rep
+git remote add origin https://github.com/ashishselenium1/Sept2022.git -> Location of git on remote rep
+git remote remove origin
+
+
+git push -u origin master - push on git
+
+https://github.com/ashishselenium1/Sept2022.git
+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
+
+==================================Now Connect Jenkins to github==================================
+
+mvn exec:java -Dexec.mainClass="runner.JSONRunner" 
+
+https://github.com/ashishselenium1/cucumber2022.git
+
+
+https://github.com/ashishselenium1/March2022.git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+se.le.ni.um.training.10@gmail.com
+Pass1234
+
+
+
+
+
+
+
+
+
+

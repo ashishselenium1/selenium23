@@ -1,0 +1,22 @@
+{
+  "test_data": [
+    {
+      "username": "xxxx1",
+      "password": "pppp1",
+      "runmode": "N",
+      "phone":"111111"
+    },
+    {
+      "username": "xxxx2",
+      "password": "pppp2",
+      "runmode": "Y",
+      "phone":"111111"
+    },
+    {
+      "username": "xxxx3",
+      "password": "pppp3",
+      "runmode": "N",
+      "phone":"111111"
+    }
+  ]
+}
