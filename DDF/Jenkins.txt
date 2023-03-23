@@ -21,14 +21,14 @@ You will get popup with user id and password
 git add . -> Adds all folders to staging
 git add <FolderName> -> Adds specific folder to staging
 git commit -m "first commit" -> Commit to local git rep
-git remote add origin https://github.com/ashishselenium1/Jan2023.git -> Location of git on remote rep
+git remote add origin https://github.com/ashishselenium1/selenium23.git -> Location of git on remote rep
 git remote remove origin
 
 
 git push -u origin master - push on git
 
 https://github.com/ashishselenium1/Sept2022.git
-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
+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
 
 ==================================Now Connect Jenkins to github==================================
 

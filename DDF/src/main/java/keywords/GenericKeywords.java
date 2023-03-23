@@ -31,7 +31,6 @@ public class GenericKeywords {
 		System.setProperty("webdriver.edge.driver", "D:\\drivers\\msedgedriver.exe");
 
 		String bName="Chrome";
-		
 		if(bName.equals("Chrome")) {
 			driver = new ChromeDriver();
 		}else if(bName.equals("Mozilla")) {
